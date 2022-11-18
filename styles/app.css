@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-size: 66.5%;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     background-color: rgb(32, 32, 32);
@@ -67,10 +68,12 @@ body{
 .nav--desplegable > ul > li {
     list-style: none;
 }
+.nav--desplegable > ul > li >a:hover{
+    color: rgb(32, 168, 221);
+}
 .nav--desplegable > ul > li > a{
     font-size: 2rem;
 }
-
 
 
 
@@ -79,18 +82,15 @@ body{
     padding: 10px 18px;
     list-style: none;
     border-radius: 4px;
-    color: black;
     background-color:rgb(255, 206, 0);
+    color: black;
 }
+
 .cv-button:hover{
     background-color:rgb(255, 252, 55);
+    color: black!important;
 }
-.nav--menu .cv-button a{
-    color: #333;
-}
-.nav--menu .cv-button a:hover{
-    color: #333;
-}
+
 
 /*HEADER*/
 .header{
@@ -191,10 +191,10 @@ body{
 .about-me__text{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 .about-me__text > *{
-    padding: 15px 5px;
+    margin: 20px 0;
 }
 
 .about-me__text .cv-button{
@@ -210,23 +210,6 @@ body{
     font-size: 1.7rem;
     letter-spacing: 1px; 
     font-weight: 300;
-}
-.about-me__text ul{
-    display: flex;
-}
-.about-me__text ul li{
-    width: 50px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    text-decoration: none;
-    list-style: none;
-    margin-right: 20px;
-    color: black;
-    background-color: #fff;
-    border: 1px solid black;
 }
 
 .about-me__img{
@@ -291,6 +274,13 @@ body{
     font-size: 1.8rem;
     letter-spacing: 1px;
 }
+.studies__card--text a{
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 100%;
+    text-align: end;
+}
 
 .studies .cv-button{
     border-radius: 1px;
@@ -309,16 +299,32 @@ body{
 .card1 .studies__card--text h4{
     color:  rgb(255, 127, 22);
 }
+.card1 .studies__card--text a{
+    color:  rgb(255, 127, 22);
+}
+
+
+
+
 .card2:hover{
     border: 1px solid rgb(255, 206, 0);
 }
 .card2 .studies__card--text h4{
     color:  rgb(255, 206, 0);
 }
+.card2 .studies__card--text a{
+    color:  rgb(255, 206, 0);
+}
+
+
+
 .card3:hover:hover{
     border: 1px solid  rgb(32, 168, 221);
 }
 .card3 .studies__card--text h4{
+    color:  rgb(32, 168, 221);
+}
+.card3 .studies__card--text a{
     color:  rgb(32, 168, 221);
 }
 
