@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="./styles/about-me.css">
+    <title>Ivan Do Ledesma Portfolio</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav--home">
+            <a href="" class="nav--home__link">
+                <p class="letter-mobile i">I</p>
+                <p class="letter-desktop">V</p>
+                <p class="letter-desktop">A</p>
+                <p class="letter-desktop">N</p>
+                <p class="letter-mobile d">D</p>
+                <p class="letter-mobile l">L</p>
+                <p class="letter-desktop">E</p>
+                <p class="letter-desktop">D</p>
+                <p class="letter-desktop">E</p>
+                <p class="letter-desktop">S</p>
+                <p class="letter-desktop">M</p>
+                <p class="letter-desktop">A</p>
+            </a>
+        </div>
+        <div class="nav--menu">
+            <a href="#"><img src="./imgs/menu-icon.svg" alt=""></a>
+        </div>
+        <div class="nav--desplegable">
+            <ul>
+                <li class="nav--menu__item nav--menu__item--section"><a href="#about-me">About me</a></li>
+                <li class="nav--menu__item nav--menu__item--section"><a href="#studies">Projects</a></li>
+                <ul class="contact__container--list">
+                    <li><a href=""><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
+                    <li><a href=""><img src="./imgs/github-icon.svg" alt=""></a></li>
+                    <li><a href=""><img src="./imgs/wpp-icon.svg" alt=""></a></li>
+                </ul>
+                <li class="nav--menu__item nav--menu__desktop">
+                    <a href="./archivos/CV-New.pdf" download="curriculum" class="cv-button">Download CV</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header--container">
+            <div class="header--container__box--html">
+                <a href="#studies">Front</a>
+                <img src="./imgs/proyecto-1.png" alt="">
+                <img src="./imgs/html1.jpg" alt="">
+            </div>
+            <div class="header--container__box--js">
+                <img src="./imgs/js1.jpg" alt="">
+                <a href="#studies">End</a>
+                <img src="./imgs/proyecto-2.jpg" alt="">
+            </div>
+            <div class="header--container__box--css">
+                <a href="#studies">Developer</a>
+                <img src="./imgs/css1.jpg" alt="">
+                <img src="./imgs/css2.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about-me" id="about-me">
+            <div class="about-me__container">
+                <div class="about-me__text">
+                    <h2>Sobre mí</h2>
+                    <div>Hola! Soy Ivan, desarrollador web de Argentina que lleva 1 año estudiando tecnologias web y generando páginas web dinamicas con javascript.
+                    </div>
+                    <a href="about-me.html" class="cv-button">Ver más</a>
+                </div>
+                <div class="about-me__img">
+                    <img src="./imgs/yo.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="studies" id="studies">
+            <h2>Portfolio</h2>
+            <div class="studies__card card1">
+                <img class="studies__card--img" src="./imgs/proyecto-1.png" alt="">
+                <div class="studies__card--text">
+                    <h3>Página de LoR</h3>
+                    <h4>HTML / CSS</h4>
+                    <p>Página web replicando la página oficial del conocido juego de cartas Legends of runaterra. Esta hecha con HTML y CSS, y hace uso de tecnologiás como Sass, Bootstrap5.</p>
+                    <a href="https://ivan-ledesma.github.io/cardsPage-IvanDoSantosLedesma/" target="_blank">Visita la página</a>
+                </div>
+            </div>
+            <div class="studies__card card2">
+                <img class="studies__card--img" src="./imgs/proyecto-2.jpg" alt="">
+                <div class="studies__card--text">
+                    <h3>Proyecto 1</h3>
+                    <h4>JS</h4>
+                    <p>Página simulando un sistema creación de cartas creado principalmente con js vanilla utilizando clases, objetos y consumo de archivo Json.</p>
+                    <a href="https://ivan-ledesma.github.io/ProyectoFinal-IvanDoSantosLedesma/" target="_blank">Visita la página</a>
+                </div>
+            </div>
+            <div class="studies__card card3">
+                <img class="studies__card--img" src="./imgs/proyecto-2.jpg" alt="">
+                <div class="studies__card--text">
+                    <h3>Proyecto 1</h3>
+                    <h4>CSS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus sunt ipsum.</p>
+                    <a href="">Visita la página</a>
+                </div>
+            </div>
+            <div class="cv-button-div">
+                <a href="#portfolio.html" class="cv-button">View all projects</a>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__container">
+                <h3>Contactate conmigo</h3>
+                <p>Puedes hacerlo en cualquiera de estos medios:</p>
+                <ul>
+                    <li>(+54 9)11 2393-3114</li>
+                    <li>ivan.dosantosledesma@outlook.com</li>
+                    <li class="cv-button-hover"><a class="cv-button" href="./archivos/DoSantosIvanLedesma-CV.pdf" download="curriculum">Descarga mi CV</a></li>
+                    <ul class="contact__container--list">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/ivan-doledesma"><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
+                        <li><a target="_blank" href="https://github.com/Ivan-Ledesma"><img src="./imgs/github-icon.svg" alt=""></a></li>
+                        <li><a target="_blank" href="https://wa.me/+541123933114"><img src="./imgs/wpp-icon.svg" alt=""></a></li>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__list--container">
+            <ul class="container--list">
+                <li class="nav--home">
+                    <a href="" class="nav--home__link">IDL</a>
+                </li>
+                <li><p>(+54 9)11 2393-3114</p></li>
+                <ul class="contact__container--list">
+                    <li><a target="_blank" href="https://www.linkedin.com/in/ivan-doledesma"><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
+                    <li><a target="_blank" href="https://github.com/Ivan-Ledesma"><img src="./imgs/github-icon.svg" alt=""></a></li>
+                    <li><a target="_blank" href="https://wa.me/+541123933114"><img src="./imgs/wpp-icon.svg" alt=""></a></li>
+                </ul>
+            </ul>
+            <ul class="container--list"> 
+                <li><h4>Pages</h4></li>
+                <li><a href="#about-me">Sobre mi</a></li>
+                <li><a href="#studies">Proyectos</a></li>
+            </ul>
+            <ul class="container--list">
+                <li><h4>Projects</h4></li>
+                <li><a target="_blank" href="https://ivan-ledesma.github.io/cardsPage-IvanDoSantosLedesma/">LoR page</a></li>
+                <li><a target="_blank" href="https://ivan-ledesma.github.io/ProyectoFinal-IvanDoSantosLedesma/">Página de cartas</a></li>
+            </ul>
+        </div>
+        <p>© Ivan Do Santos Ledesma - 2022</p>
+    </footer>
+</body>
+</html>
