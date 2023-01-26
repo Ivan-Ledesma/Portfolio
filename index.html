@@ -7,9 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/app.css">
-    <link rel="stylesheet" href="./styles/about-me.css">
-    <title>Ivan Do Ledesma Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ivan Do Santos Ledesma Portfolio</title>
 </head>
 <body>
     <nav class="nav">
@@ -36,6 +35,7 @@
             <ul>
                 <li class="nav--menu__item nav--menu__item--section"><a href="#about-me">About me</a></li>
                 <li class="nav--menu__item nav--menu__item--section"><a href="#studies">Projects</a></li>
+                <li class="nav--menu__item nav--menu__item--section"><a href="#contact">Contact</a></li>
                 <ul class="contact__container--list">
                     <li><a href=""><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
                     <li><a href=""><img src="./imgs/github-icon.svg" alt=""></a></li>
@@ -71,8 +71,9 @@
             <div class="about-me__container">
                 <div class="about-me__text">
                     <h2>Sobre mí</h2>
-                    <div>Hola! Soy Ivan, desarrollador web de Argentina que lleva 1 año estudiando tecnologias web y generando páginas web dinamicas con javascript.
-                    </div>
+                    <p>Hola! Soy Ivan, desarrollador Front End enfocado en el aprendizaje de herramientos de desarrollo web para la creación de sitios web interactivos.</p>
+                    <p>Me gusta mucho desarrollar con el uso de herramientas externas como apis o librerias para aprender más sobre el mundo del desarrollo web mientras disfruto el proceso.</p>
+                    <p>Visita mis redes para conocer más sobre mis proyectos !</p>
                     <a href="about-me.html" class="cv-button">Ver más</a>
                 </div>
                 <div class="about-me__img">
@@ -87,7 +88,7 @@
                 <div class="studies__card--text">
                     <h3>Página de LoR</h3>
                     <h4>HTML / CSS</h4>
-                    <p>Página web replicando la página oficial del conocido juego de cartas Legends of runaterra. Esta hecha con HTML y CSS, y hace uso de tecnologiás como Sass, Bootstrap5.</p>
+                    <p>Web copia de la página oficial de "Legends of Runaterra" maquetada con HTML, CSS y usando tecnologías de Css como Sass y Boostrap 5.</p>
                     <a href="https://ivan-ledesma.github.io/cardsPage-IvanDoSantosLedesma/" target="_blank">Visita la página</a>
                 </div>
             </div>
@@ -113,19 +114,30 @@
                 <a href="#portfolio.html" class="cv-button">View all projects</a>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact__container">
                 <h3>Contactate conmigo</h3>
-                <p>Puedes hacerlo en cualquiera de estos medios:</p>
+                <form target="_blank" action="https://formsubmit.co/Ivan.DosantosLedesma@outlook.com" method="POST" class="contact__container--form">
+                    <label for="GET-name">Nombre : </label>
+                    <input id="GET-name" type="text" name="name" placeholder="Enter your name" required>
+                    <label for="GET-email">Email : </label>
+                    <input id="GET-email" type="email" name="email" placeholder="Enter your Email" required>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                      id="mensaje"
+                      placeholder="Enter your Message"
+                      name="mensaje"
+                      required
+                    ></textarea>
+                    <button type="submit" id="submit" class="form-button">Enviar !</button>
+                </form>
                 <ul>
-                    <li>(+54 9)11 2393-3114</li>
-                    <li>ivan.dosantosledesma@outlook.com</li>
-                    <li class="cv-button-hover"><a class="cv-button" href="./archivos/DoSantosIvanLedesma-CV.pdf" download="curriculum">Descarga mi CV</a></li>
                     <ul class="contact__container--list">
                         <li><a target="_blank" href="https://www.linkedin.com/in/ivan-doledesma"><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
                         <li><a target="_blank" href="https://github.com/Ivan-Ledesma"><img src="./imgs/github-icon.svg" alt=""></a></li>
                         <li><a target="_blank" href="https://wa.me/+541123933114"><img src="./imgs/wpp-icon.svg" alt=""></a></li>
                     </ul>
+                    <li class="cv-button-hover"><a class="cv-button" href="./archivos/DoSantosIvanLedesma-CV.pdf" download="curriculum">Descarga mi CV</a></li>
                 </ul>
             </div>
         </section>
@@ -137,6 +149,7 @@
                     <a href="" class="nav--home__link">IDL</a>
                 </li>
                 <li><p>(+54 9)11 2393-3114</p></li>
+                <li><p>ivan.dosantosledesma@outlook.com</p></li>
                 <ul class="contact__container--list">
                     <li><a target="_blank" href="https://www.linkedin.com/in/ivan-doledesma"><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
                     <li><a target="_blank" href="https://github.com/Ivan-Ledesma"><img src="./imgs/github-icon.svg" alt=""></a></li>
@@ -154,7 +167,12 @@
                 <li><a target="_blank" href="https://ivan-ledesma.github.io/ProyectoFinal-IvanDoSantosLedesma/">Página de cartas</a></li>
             </ul>
         </div>
-        <p>© Ivan Do Santos Ledesma - 2022</p>
+        <div class="footer__copyright">
+            <p>© Ivan Do Santos Ledesma - 2022</p>
+            <p>Sitio Web creado con pasión por 
+                <a target="_blank" href="https://github.com/Ivan-Ledesma">Ivan Ledesma</a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>

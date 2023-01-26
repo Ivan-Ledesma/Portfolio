@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan-Ledesma/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivan-Ledesma/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Ivan-Ledesma/Portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
