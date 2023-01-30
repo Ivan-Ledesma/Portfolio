@@ -1,0 +1,51 @@
+@use 'variables';
+.aboutMeContent{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__texts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        gap: 14px;
+        &--h2{
+            font-size: variables.$font-size-big;
+        }&--p{
+            font-size: variables.$font-size-medium;
+        }&--a{
+            font-size: variables.$font-size-medium;
+        }
+    }
+    &__image{
+        margin: 0 auto;
+        padding: 15px 0;
+        &--img{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width : 1024px){
+    .aboutMeContent{
+        max-width: 80%;
+        &__texts{
+            &--h2{
+                font-size: variables.$font-size-bigger;
+            }
+            &--p{
+                padding: 1rem 0;
+            }
+        }
+        &__image{
+            &--img{
+                width: 100%;
+                max-width: 750px;
+            }
+        }
+    }
+}

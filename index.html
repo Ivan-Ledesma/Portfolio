@@ -12,163 +12,211 @@
 </head>
 <body>
     <nav class="nav">
-        <div class="nav--home">
-            <a href="" class="nav--home__link">
-                <p class="letter-mobile i">I</p>
-                <p class="letter-desktop">V</p>
-                <p class="letter-desktop">A</p>
-                <p class="letter-desktop">N</p>
-                <p class="letter-mobile d">D</p>
-                <p class="letter-mobile l">L</p>
-                <p class="letter-desktop">E</p>
-                <p class="letter-desktop">D</p>
-                <p class="letter-desktop">E</p>
-                <p class="letter-desktop">S</p>
-                <p class="letter-desktop">M</p>
-                <p class="letter-desktop">A</p>
+        <div class="nav__section sectionHome">
+            <a href="" class="sectionHome__a">
+                <p class="sectionHome__a--p letter-mobile">I</p>
+                <p class="sectionHome__a--p letter-desktop">V</p>
+                <p class="sectionHome__a--p letter-desktop">A</p>
+                <p class="sectionHome__a--p letter-desktop">N</p>
+                <p class="sectionHome__a--p letter-mobile letter-d">D</p>
+                <p class="sectionHome__a--p letter-mobile">L</p>
+                <p class="sectionHome__a--p letter-desktop">E</p>
+                <p class="sectionHome__a--p letter-desktop">D</p>
+                <p class="sectionHome__a--p letter-desktop">E</p>
+                <p class="sectionHome__a--p letter-desktop">S</p>
+                <p class="sectionHome__a--p letter-desktop">M</p>
+                <p class="sectionHome__a--p letter-desktop">A</p>
             </a>
         </div>
-        <div class="nav--menu">
+        <ul class="nav__section sectionLinks">
+            <li class="sectionLinks__li"><a href="#about-me" class="sectionLinks__li--a">About me</a></li>
+            <li class="sectionLinks__li"><a href="#portfolio" class="sectionLinks__li--a">Projects</a></li>
+            <li class="sectionLinks__li"><a href="#contact" class="sectionLinks__li--a">Contact</a></li>
+            <li class="sectionLinks__li">
+                <a href="./archivos/CV-New.pdf" download="curriculum" class="sectionLinks__li--a cv-button">Download CV</a>
+            </li>
+        </ul>
+        <div class="nav__section sectionMenu">
+            <a href="#" class="sectionMenu__a">
+                <img src="./imgs/menu-icon.svg" alt="" class="sectionMenu__a--img">
+            </a>
         </div>
-        <div class="nav--desplegable">
-            <ul>
-                <li class="nav--menu__item nav--menu__item--section"><a href="#about-me">About me</a></li>
-                <li class="nav--menu__item nav--menu__item--section"><a href="#studies">Projects</a></li>
-                <li class="nav--menu__item nav--menu__item--section"><a href="#contact">Contact</a></li>
-                <ul class="contact__container--list">
-                    <li><a href=""><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
-                    <li><a href=""><img src="./imgs/github-icon.svg" alt=""></a></li>
-                    <li><a href=""><img src="./imgs/wpp-icon.svg" alt=""></a></li>
+        <!-- 
+            <div class="nav__section sectionMenuDrop">
+                <ul class="sectionMenuDrop__ul">
+                    <li class="sectionMenuDrop__ul--li"><a href="#about-me">About me</a></li>
+                    <li class="sectionMenuDrop__ul--li"><a href="#portfolio">Projects</a></li>
+                    <li class="sectionMenuDrop__ul--li"><a href="#contact">Contact</a></li>
                 </ul>
-                <li class="nav--menu__item nav--menu__desktop">
-                    <a href="./archivos/CV-New.pdf" download="curriculum" class="cv-button">Download CV</a>
-                </li>
-            </ul>
-        </div>
+                <ul class="sectionMenuDrop__ul">
+                    <li class="sectionMenuDrop__ul--li"><a href=""><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
+                    <li class="sectionMenuDrop__ul--li"><a href=""><img src="./imgs/github-icon.svg" alt=""></a></li>
+                    <li class="sectionMenuDrop__ul--li"><a href=""><img src="./imgs/wpp-icon.svg" alt=""></a></li>
+                </ul>
+            </div>
+        -->
     </nav>
     <header class="header">
-        <div class="header--container">
-            <div class="header--container__box--html">
-                <a href="#studies">Front</a>
-                <img src="./imgs/proyecto-1.png" alt="">
-                <img src="./imgs/html1.jpg" alt="">
+        <div class="header__container">
+            <div class="header__container--box front">
+                <a class="front__a" href="#portfolio">Front</a>
+                <img class="front__img" src="./imgs/proyecto-1.png" alt="">
+                <img class="front__img" src="./imgs/html1.jpg" alt="">
             </div>
-            <div class="header--container__box--js">
-                <img src="./imgs/js1.jpg" alt="">
-                <a href="#studies">End</a>
-                <img src="./imgs/proyecto-2.jpg" alt="">
+            <div class="header__container--box end">
+                <img class="end__img"  src="./imgs/js1.jpg" alt="">
+                <a class="end__a" href="#portfolio">End</a>
+                <img class="end__img"  src="./imgs/proyecto-2.jpg" alt="">
             </div>
-            <div class="header--container__box--css">
-                <a href="#studies">Developer</a>
-                <img src="./imgs/css1.jpg" alt="">
-                <img src="./imgs/css2.jpg" alt="">
+            <div class="header__container--box dev">
+                <a class="dev__a" href="#portfolio">Developer</a>
+                <img class="dev__img" src="./imgs/css1.jpg" alt="">
+                <img class="dev__img" src="./imgs/css2.jpg" alt="">
             </div>
         </div>
     </header>
-    <main>
-        <section class="about-me" id="about-me">
-            <div class="about-me__container">
-                <div class="about-me__text">
-                    <h2>Sobre mí</h2>
-                    <p>Hola! Soy Ivan, desarrollador Front End enfocado en el aprendizaje de herramientos de desarrollo web para la creación de sitios web interactivos.</p>
-                    <p>Me gusta mucho desarrollar con el uso de herramientas externas como apis o librerias para aprender más sobre el mundo del desarrollo web mientras disfruto el proceso.</p>
-                    <p>Visita mis redes para conocer más sobre mis proyectos !</p>
-                    <a href="about-me.html" class="cv-button">Ver más</a>
+    <main class="main">
+        <section class="main__section" id="about-me">
+            <div class="aboutMeContent">
+                <div class="aboutMeContent__texts">
+                    <h2 class="aboutMeContent__texts--h2" >Sobre mí</h2>
+                    <p class="aboutMeContent__texts--p" >Hola! Soy Ivan, desarrollador Front End enfocado en el aprendizaje de herramientos de desarrollo web para la creación de sitios web interactivos.</p>
+                    <p class="aboutMeContent__texts--p" >Me gusta mucho desarrollar con el uso de herramientas externas como apis o librerias para aprender más sobre el mundo del desarrollo web mientras disfruto el proceso.</p>
+                    <p class="aboutMeContent__texts--p" >Visita mis redes para conocer más sobre mis proyectos !</p>
+                    <a class="aboutMeContent__texts--a cv-button" href="#portfolio">Ver Portfolio</a>
                 </div>
-                <div class="about-me__img">
-                    <img src="./imgs/yo.jpeg" alt="">
+                <div class="aboutMeContent__image">
+                    <img class="aboutMeContent__image--img" src="./imgs/yo.jpeg" alt="">
                 </div>
             </div>
         </section>
-        <section class="studies" id="studies">
-            <h2>Portfolio</h2>
-            <div class="studies__card card1">
-                <img class="studies__card--img" src="./imgs/proyecto-1.png" alt="">
-                <div class="studies__card--text">
-                    <h3>Página de LoR</h3>
-                    <h4>HTML / CSS</h4>
-                    <p>Web copia de la página oficial de "Legends of Runaterra" maquetada con HTML, CSS y usando tecnologías de Css como Sass y Boostrap 5.</p>
-                    <a href="https://ivan-ledesma.github.io/cardsPage-IvanDoSantosLedesma/" target="_blank">Visita la página</a>
+        <section class="main__section portfolio" id="portfolio">
+            <h2 class="portfolio__title">Portfolio</h2>
+            <div class="portfolio__box html">
+                <div class="card">
+                    <img class="card__img" src="./imgs/LOR-Image.png" alt="">
+                    <div class="card__text">
+                        <h3 class="card__text--h3" >Página de LoR</h3>
+                        <h4 class="card__text--h4" >HTML / CSS</h4>
+                        <p class="card__text--p" >Web copia de la página oficial de "Legends of Runaterra" maquetada con HTML, CSS y usando tecnologías de Css como Sass y Boostrap 5.</p>
+                        <a class="card__text--a cv-button" href="https://ivan-ledesma.github.io/LOR-Page-Clon/" target="_blank">Visita la página</a>
+                    </div>
                 </div>
             </div>
-            <div class="studies__card card2">
-                <img class="studies__card--img" src="./imgs/proyecto-2.jpg" alt="">
-                <div class="studies__card--text">
-                    <h3>Proyecto 1</h3>
-                    <h4>JS</h4>
-                    <p>Página simulando un sistema creación de cartas creado principalmente con js vanilla utilizando clases, objetos y consumo de archivo Json.</p>
-                    <a href="https://ivan-ledesma.github.io/ProyectoFinal-IvanDoSantosLedesma/" target="_blank">Visita la página</a>
+            <div class="portfolio__box js">
+                <div class="card">
+                    <img class="card__img" src="./imgs/proyecto-2.jpg" alt="">
+                    <div class="card__text">
+                        <h3 class="card__text--h3" >Creador de cartas</h3>
+                        <h4 class="card__text--h4" >JS</h4>
+                        <p class="card__text--p" >Página simulando un sistema creación de cartas creado principalmente con js vanilla utilizando clases, objetos y consumo de archivo Json.</p>
+                        <a class="card__text--a cv-button" target="_blank"  href="https://ivan-ledesma.github.io/Cards-Creator-JS/" target="_blank">Visita la página</a>
+                    </div>
                 </div>
             </div>
-            <div class="studies__card card3">
-                <img class="studies__card--img" src="./imgs/proyecto-2.jpg" alt="">
-                <div class="studies__card--text">
-                    <h3>Proyecto 1</h3>
-                    <h4>CSS</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus sunt ipsum.</p>
-                    <a href="">Visita la página</a>
+            <div class="portfolio__box react">
+                <div class="card">
+                    <img class="card__img" src="./imgs/React-API.png" alt="">
+                    <div class="card__text">
+                        <h3 class="card__text--h3" >React Api Rest</h3>
+                        <h4 class="card__text--h4" >CSS</h4>
+                        <p class="card__text--p" >Ejercicio simple de REACT JS consumiendo una API y creando el entorno de trabajo con Vite JS</p>
+                        <a class="card__text--a cv-button" target="_blank" href="https://ivan-ledesma.github.io/API-Rick-and-Morty/">Visita la página</a>
+                    </div>
                 </div>
             </div>
-            <div class="cv-button-div">
-                <a href="#portfolio.html" class="cv-button">View all projects</a>
+            <div class="portfolio__link">
+                <a href="https://github.com/Ivan-Ledesma" target="_blank" class="portfolio__link--a cv-button">Visita mi Git-Hub ! </a>
             </div>
         </section>
         <section class="contact" id="contact">
             <div class="contact__container">
-                <h3>Contactate conmigo</h3>
-                <form target="_blank" action="https://formsubmit.co/Ivan.DosantosLedesma@outlook.com" method="POST" class="contact__container--form">
-                    <label for="GET-name">Nombre : </label>
-                    <input id="GET-name" type="text" name="name" placeholder="Enter your name" required>
-                    <label for="GET-email">Email : </label>
-                    <input id="GET-email" type="email" name="email" placeholder="Enter your Email" required>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea
+                <h3 class="contact__container--h3">Contactate conmigo</h3>
+                <form target="_blank" action="https://formsubmit.co/Ivan.DosantosLedesma@outlook.com" method="POST" class="contact__container--form form">
+                    <label  class="form__label" for="GET-name">Nombre : </label>
+                    <input  class="form__input" id="GET-name" type="text" name="name" placeholder="Enter your name" required>
+                    <label  class="form__label" for="GET-email">Email : </label>
+                    <input  class="form__input" id="GET-email" type="email" name="email" placeholder="Enter your Email" required>
+                    <label  class="form__label" for="mensaje">Mensaje</label>
+                    <textarea class="form__textarea" 
                       id="mensaje"
                       placeholder="Enter your Message"
                       name="mensaje"
                       required
                     ></textarea>
-                    <button type="submit" id="submit" class="form-button">Enviar !</button>
+                    <button class="form__button cv-button" type="submit" id="submit">Enviar !</button>
                 </form>
-                <ul>
-                    <ul class="contact__container--list">
-                        <li><a target="_blank" href="https://www.linkedin.com/in/ivan-doledesma"><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
-                        <li><a target="_blank" href="https://github.com/Ivan-Ledesma"><img src="./imgs/github-icon.svg" alt=""></a></li>
-                        <li><a target="_blank" href="https://wa.me/+541123933114"><img src="./imgs/wpp-icon.svg" alt=""></a></li>
-                    </ul>
-                    <li class="cv-button-hover"><a class="cv-button" href="./archivos/DoSantosIvanLedesma-CV.pdf" download="curriculum">Descarga mi CV</a></li>
+                <ul class="contact__container--list ulList">
+                    <li class="ulList__li">
+                        <a class="ulList__li--a" target="_blank" href="https://www.linkedin.com/in/ivan-doledesma"><img src="./imgs/linkedin-icon.svg" alt=""></a>
+                    </li>
+                    <li class="ulList__li">
+                        <a class="ulList__li--a" target="_blank" href="https://github.com/Ivan-Ledesma"><img src="./imgs/github-icon.svg" alt=""></a>
+                    </li>
+                    <li class="ulList__li">
+                        <a class="ulList__li--a" target="_blank" href="https://wa.me/+541123933114"><img src="./imgs/wpp-icon.svg" alt=""></a>
+                    </li>
                 </ul>
+                <a class="contact__container--cv-button cv-button" href="./archivos/DoSantosIvanLedesma-CV.pdf" download="curriculum">Descarga mi CV</a>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__list--container">
-            <ul class="container--list">
-                <li class="nav--home">
-                    <a href="" class="nav--home__link">IDL</a>
+        <div class="footer__container">
+            <ul class="footer__container--ul footerListContact">
+                <li class="footerListContact__li">
+                    <a class="footerListContact__li--a" href="" class="nav--home__link">IDL</a>
                 </li>
-                <li><p>(+54 9)11 2393-3114</p></li>
-                <li><p>ivan.dosantosledesma@outlook.com</p></li>
-                <ul class="contact__container--list">
-                    <li><a target="_blank" href="https://www.linkedin.com/in/ivan-doledesma"><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
-                    <li><a target="_blank" href="https://github.com/Ivan-Ledesma"><img src="./imgs/github-icon.svg" alt=""></a></li>
-                    <li><a target="_blank" href="https://wa.me/+541123933114"><img src="./imgs/wpp-icon.svg" alt=""></a></li>
+                <li class="footerListContact__li">
+                    <p class="footerListContact__li--p">(+54 9)11 2393-3114</p>
+                </li>
+                <li class="footerListContact__li">
+                    <p class="footerListContact__li--p">ivan.dosantosledesma@outlook.com</p>
+                </li>
+                <ul class="footerListContact__ul">
+                    <li class="footerListContact__ul--li">
+                        <a target="_blank" href="https://www.linkedin.com/in/ivan-doledesma"><img src="./imgs/linkedin-icon.svg" alt=""></a>
+                    </li>
+                    <li class="footerListContact__ul--li">
+                        <a target="_blank" href="https://github.com/Ivan-Ledesma"><img src="./imgs/github-icon.svg" alt=""></a>
+                    </li>
+                    <li class="footerListContact__ul--li">
+                        <a target="_blank" href="https://wa.me/+541123933114"><img src="./imgs/wpp-icon.svg" alt=""></a>
+                    </li>
                 </ul>
             </ul>
-            <ul class="container--list"> 
-                <li><h4>Pages</h4></li>
-                <li><a href="#about-me">Sobre mi</a></li>
-                <li><a href="#studies">Proyectos</a></li>
+            <ul class="footer__container--ul footerListPages"> 
+                <li class="footerListPages__li">
+                    <h4 class="footerListPages__li--h4" >Pages</h4>
+                </li>
+                <li class="footerListPages__li">
+                    <a  class="footerListPages__li--a" href="#about-me">Sobre mi</a>
+                </li>
+                <li class="footerListPages__li">
+                    <a  class="footerListPages__li--a" href="#portfolio">Proyectos</a>
+                </li>
             </ul>
-            <ul class="container--list">
-                <li><h4>Projects</h4></li>
-                <li><a target="_blank" href="https://ivan-ledesma.github.io/cardsPage-IvanDoSantosLedesma/">LoR page</a></li>
-                <li><a target="_blank" href="https://ivan-ledesma.github.io/ProyectoFinal-IvanDoSantosLedesma/">Página de cartas</a></li>
+            <ul class="footer__container--ul footerListPages">
+                <li class="footerListPages__li">
+                    <h4 class="footerListPages__li--h4">Projects</h4>
+                </li>
+                <li class="footerListPages__li">
+                    <a
+                        class="footerListPages__li--a"
+                        target="_blank"
+                        href="https://ivan-ledesma.github.io/LOR-Page-Clon/">LoR page</a>
+                </li>
+                <li class="footerListPages__li">
+                    <a
+                        class="footerListPages__li--a"
+                        target="_blank"
+                        href="https://ivan-ledesma.github.io/Cards-Creator-JS/">Página de cartas</a>
+                </li>            
             </ul>
         </div>
         <div class="footer__copyright">
-            <p>© Ivan Do Santos Ledesma - 2022</p>
-            <p>Sitio Web creado con pasión por 
+            <p class="footer__copyright--p">© Ivan Do Santos Ledesma - 2022</p>
+            <p class="footer__copyright--p">Sitio Web creado con pasión por 
                 <a target="_blank" href="https://github.com/Ivan-Ledesma">Ivan Ledesma</a>
             </p>
         </div>

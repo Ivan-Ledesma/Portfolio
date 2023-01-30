@@ -1,0 +1,91 @@
+@use "variables";
+
+/*seccion de contacto*/
+.contact{
+    background-color: rgb(32, 32, 32);
+    padding: 50px 0;
+    .contact__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        margin-top: 40px;
+        padding: 30px 0;
+        background-color: rgb(32, 168, 221);
+
+        &--h3{
+            font-size: variables.$font-size-big;
+        }
+        &--form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            .form{
+                &__label{
+                    font-size: variables.$font-size-medium;
+                }
+                &__input{
+                    width: 80%;
+                    padding: .8rem;
+                    margin: 1rem 0;
+                    font-size: 1.5em;
+                    outline: none;
+                }
+                &__textarea{
+                    width: 80%;
+                    height: 320px;
+                    font-size: 1.5em;
+                    margin: .8rem 0;
+                    resize: none;
+                }
+                &__button{
+                    border: none;
+                    font-size: variables.$font-size-medium;
+                    }
+                &__button:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .ulList{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        &__li{ 
+            list-style: none;
+            &--a{
+                img{
+                    width: 3rem;
+                }
+            }
+        }
+    }
+    &__container--cv-button{
+        margin: 2rem auto 0 auto;
+        font-size: variables.$font-size-medium;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contact{
+        &__container{
+            .form{
+                &__input{
+                    max-width: 660px;
+                }
+                &__textarea{
+                    max-width: 660px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+
+

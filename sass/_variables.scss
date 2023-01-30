@@ -1,15 +1,19 @@
-
+$font-size-smaller : 1.3em;
+$font-size-small : 1.5em;
+$font-size-medium : 1.7em;
+$font-size-big : 2em;
+$font-size-bigger : 2.5em;
 
 .cv-button{
     width: max-content;
-    padding: 10px 18px;
+    padding: 8px 15px;
     list-style: none;
     border-radius: 4px;
     background-color:rgb(255, 206, 0);
-    color: black;
+    color: black!important;
+    &:hover{
+        background-color:rgb(255, 252, 55);
+    }
 }
 
-.cv-button:hover{
-    background-color:rgb(255, 252, 55);
-    color: black!important;
-}
+
