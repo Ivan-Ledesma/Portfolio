@@ -37,24 +37,22 @@
             </li>
         </ul>
         <div class="nav__section sectionMenu">
-            <a href="#" class="sectionMenu__a">
+            <a href="#" class="sectionMenu__a" id="menu">
                 <img src="./imgs/menu-icon.svg" alt="" class="sectionMenu__a--img">
             </a>
         </div>
-        <!-- 
-            <div class="nav__section sectionMenuDrop">
-                <ul class="sectionMenuDrop__ul">
-                    <li class="sectionMenuDrop__ul--li"><a href="#about-me">About me</a></li>
-                    <li class="sectionMenuDrop__ul--li"><a href="#portfolio">Projects</a></li>
-                    <li class="sectionMenuDrop__ul--li"><a href="#contact">Contact</a></li>
-                </ul>
-                <ul class="sectionMenuDrop__ul">
-                    <li class="sectionMenuDrop__ul--li"><a href=""><img src="./imgs/linkedin-icon.svg" alt=""></a></li>
-                    <li class="sectionMenuDrop__ul--li"><a href=""><img src="./imgs/github-icon.svg" alt=""></a></li>
-                    <li class="sectionMenuDrop__ul--li"><a href=""><img src="./imgs/wpp-icon.svg" alt=""></a></li>
-                </ul>
-            </div>
-        -->
+        <div class="nav__section sectionMenuDrop">
+            <ul class="sectionMenuDrop__pageLinks">
+                <li class="sectionMenuDrop__pageLinks--li"><a class="mobile-link" href="#about-me">About me</a></li>
+                <li class="sectionMenuDrop__pageLinks--li"><a class="mobile-link" href="#portfolio">Projects</a></li>
+                <li class="sectionMenuDrop__pageLinks--li"><a class="mobile-link" href="#contact">Contact</a></li>
+            </ul>
+            <ul class="sectionMenuDrop__iconLinks">
+                <li class="sectionMenuDrop__iconLinks--li"><a href="#"><img  class="mobile-link" src="./imgs/linkedin-icon.svg" alt=""></a></li>
+                <li class="sectionMenuDrop__iconLinks--li"><a href="#"><img  class="mobile-link" src="./imgs/github-icon.svg" alt=""></a></li>
+                <li class="sectionMenuDrop__iconLinks--li"><a href="#"><img  class="mobile-link" src="./imgs/wpp-icon.svg" alt=""></a></li>
+            </ul>
+        </div>
     </nav>
     <header class="header">
         <div class="header__container">
@@ -132,7 +130,7 @@
         <section class="contact" id="contact">
             <div class="contact__container">
                 <h3 class="contact__container--h3">Contactate conmigo</h3>
-                <form target="_blank" action="https://formsubmit.co/Ivan.DosantosLedesma@outlook.com" method="POST" class="contact__container--form form">
+                <form class="contact__container--form form" target="_blank" action="https://formsubmit.co/Ivan.DosantosLedesma@outlook.com" method="POST">
                     <label  class="form__label" for="GET-name">Nombre : </label>
                     <input  class="form__input" id="GET-name" type="text" name="name" placeholder="Enter your name" required>
                     <label  class="form__label" for="GET-email">Email : </label>
@@ -221,5 +219,6 @@
             </p>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>

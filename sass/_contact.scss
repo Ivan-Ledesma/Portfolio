@@ -3,7 +3,8 @@
 /*seccion de contacto*/
 .contact{
     background-color: rgb(32, 32, 32);
-    padding: 50px 0;
+    margin: 5rem 0;
+    padding: 2rem 0;
     .contact__container{
         width: 100%;
         display: flex;
@@ -40,6 +41,7 @@
                     font-size: 1.5em;
                     margin: .8rem 0;
                     resize: none;
+                    outline: none;
                 }
                 &__button{
                     border: none;
@@ -74,6 +76,26 @@
 @media screen and (min-width:1024px){
     .contact{
         &__container{
+            .form{
+                &__input{
+                    max-width: 660px;
+                }
+                &__textarea{
+                    max-width: 660px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:1366px){
+    .contact{
+        &__container{
+            &--h3{
+                font-size: variables.$font-size-desktop-big;
+            }
             .form{
                 &__input{
                     max-width: 660px;

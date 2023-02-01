@@ -3,8 +3,10 @@ $font-size-small : 1.5em;
 $font-size-medium : 1.7em;
 $font-size-big : 2em;
 $font-size-bigger : 2.5em;
+$font-size-desktop-big : 3em;
 
 .cv-button{
+    transition: .5s;
     width: max-content;
     padding: 8px 15px;
     list-style: none;

@@ -59,7 +59,7 @@
     }
     .html{
         margin: 0 auto;
-        width: 90%;
+        width: 70%;
         border-bottom: 2px solid rgb(255, 127, 22);
         .card{
             &__text{
@@ -71,7 +71,7 @@
     }
     .js{
         margin: 0 auto;
-        width: 90%;
+        width: 70%;
         border-bottom: 2px solid rgb(255, 206, 0);
         .card{
             &__text{
@@ -83,7 +83,7 @@
     }
     .react{
         margin: 0 auto;
-        width: 90%;
+        width: 70%;
         border-bottom: 2px solid rgb(32, 168, 221) ;
         .card{
             &__text{
@@ -119,4 +119,24 @@
         }
 
     }
+}
+
+@media screen and (min-width:1260px){
+    .portfolio{
+        &__title{
+            font-size: variables.$font-size-desktop-big
+        }
+        &__box{
+            .card{
+                width: 70%;
+                &__text{
+                    width: 80%;
+                    margin: 2rem 0;
+                    *{
+                        margin: .6rem 0;
+                    }
+                }
+            }
+        }
+    }    
 }

@@ -1,4 +1,5 @@
 .cv-button {
+  transition: 0.5s;
   width: max-content;
   padding: 8px 15px;
   list-style: none;
@@ -18,12 +19,14 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding: 8px 15px;
   background-color: #333;
   border-bottom: 1px solid rgb(31, 31, 31);
 }
 .nav .nav__section {
-  max-width: 50%;
+  width: 50%;
+}
+.nav .sectionHome {
+  padding: 0.4rem 0.8rem;
 }
 .nav .sectionHome__a {
   display: flex;
@@ -73,36 +76,52 @@
   width: 100%;
 }
 .nav .sectionMenuDrop {
-  height: 100vh;
+  transition: 0.5s;
+  height: 0;
   width: 100%;
   background-color: rgb(32, 168, 221);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.nav .sectionMenuDrop__ul--li {
-  margin: 10px 0;
+.nav .sectionMenuDrop__pageLinks {
+  display: flex;
+  flex-direction: column;
+}
+.nav .sectionMenuDrop__pageLinks--li {
+  margin: 1rem 0.5rem;
   list-style: none;
 }
-.nav .sectionMenuDrop__ul--li a {
+.nav .sectionMenuDrop__pageLinks--li a {
   font-size: 3rem;
   color: rgb(22, 22, 22);
+  padding: 0.5rem;
 }
-.nav .sectionMenuDrop__ul--li a img {
-  width: 60px;
-  max-width: 100%;
+.nav .sectionMenuDrop__pageLinks--li :hover {
+  color: #fff;
 }
-.nav .sectionMenuDrop__ul--li:nth-child(2) a img {
-  width: 50px;
-}
-.nav .sectionMenuDrop__ul:nth-child(2) {
+.nav .sectionMenuDrop__iconLinks {
+  list-style-type: none !important;
   display: flex;
   align-items: center;
 }
-.nav .sectionMenuDrop__ul:nth-child(2) li {
+.nav .sectionMenuDrop__iconLinks--li {
   list-style: none;
-  display: flex;
-  align-items: center;
+  margin: 0.5rem 1rem;
+}
+.nav .sectionMenuDrop__iconLinks--li a img {
+  max-width: 5rem;
+  width: 100%;
+}
+.nav .sectionMenuDrop__iconLinks--li a :hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.nav .height {
+  height: 100vh;
+}
+.nav .menuButtonColor {
+  background-color: rgb(32, 168, 221);
 }
 
 @media screen and (min-width: 600px) {
@@ -114,14 +133,21 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .nav {
-    padding: 1rem;
-  }
   .nav .sectionMenu {
     display: none !important;
   }
   .nav .sectionLinks {
     display: flex !important;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .nav .sectionLinks__li {
+    margin: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .nav .sectionLinks__li {
+    margin: 0 1rem;
   }
 }
 .header {
@@ -212,14 +238,16 @@
   }
 }
 .aboutMeContent {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 15px 0;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 6rem 0;
 }
 .aboutMeContent__texts {
+  width: 80%;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,22 +264,53 @@
   font-size: 1.7em;
 }
 .aboutMeContent__image {
-  margin: 0 auto;
-  padding: 15px 0;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
 }
 .aboutMeContent__image--img {
   width: 100%;
 }
 
+@media (min-width: 766px) {
+  .aboutMeContent__image--img {
+    max-width: 600px;
+  }
+}
 @media (min-width: 1024px) {
-  .aboutMeContent {
-    max-width: 80%;
+  .aboutMeContent__texts {
+    width: 60%;
   }
   .aboutMeContent__texts--h2 {
     font-size: 2.5em;
   }
   .aboutMeContent__texts--p {
     padding: 1rem 0;
+  }
+  .aboutMeContent__image--img {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .aboutMeContent__texts--h2 {
+    font-size: 2.5em;
+  }
+  .aboutMeContent__texts--p {
+    padding: 1rem 0;
+  }
+  .aboutMeContent__image--img {
+    width: 100%;
+    max-width: 750px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .aboutMeContent__texts {
+    width: 50%;
+  }
+  .aboutMeContent__image {
+    width: 50%;
   }
   .aboutMeContent__image--img {
     width: 100%;
@@ -314,7 +373,7 @@
 }
 .portfolio .html {
   margin: 0 auto;
-  width: 90%;
+  width: 70%;
   border-bottom: 2px solid rgb(255, 127, 22);
 }
 .portfolio .html .card__text--h4 {
@@ -322,7 +381,7 @@
 }
 .portfolio .js {
   margin: 0 auto;
-  width: 90%;
+  width: 70%;
   border-bottom: 2px solid rgb(255, 206, 0);
 }
 .portfolio .js .card__text--h4 {
@@ -330,7 +389,7 @@
 }
 .portfolio .react {
   margin: 0 auto;
-  width: 90%;
+  width: 70%;
   border-bottom: 2px solid rgb(32, 168, 221);
 }
 .portfolio .react .card__text--h4 {
@@ -357,10 +416,26 @@
     object-fit: cover;
   }
 }
+@media screen and (min-width: 1260px) {
+  .portfolio__title {
+    font-size: 3em;
+  }
+  .portfolio__box .card {
+    width: 70%;
+  }
+  .portfolio__box .card__text {
+    width: 80%;
+    margin: 2rem 0;
+  }
+  .portfolio__box .card__text * {
+    margin: 0.6rem 0;
+  }
+}
 /*seccion de contacto*/
 .contact {
   background-color: rgb(32, 32, 32);
-  padding: 50px 0;
+  margin: 5rem 0;
+  padding: 2rem 0;
 }
 .contact .contact__container {
   width: 100%;
@@ -398,6 +473,7 @@
   font-size: 1.5em;
   margin: 0.8rem 0;
   resize: none;
+  outline: none;
 }
 .contact .contact__container--form .form__button {
   border: none;
@@ -424,6 +500,18 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .contact__container .form__input {
+    max-width: 660px;
+  }
+  .contact__container .form__textarea {
+    max-width: 660px;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .contact__container--h3 {
+    font-size: 3em;
+  }
   .contact__container .form__input {
     max-width: 660px;
   }
@@ -462,6 +550,9 @@
   color: rgb(255, 206, 0);
   font-size: 1.7em;
 }
+.footer__container .footerListContact__li--a:hover {
+  color: rgb(147, 118, 0);
+}
 .footer__container .footerListContact__li--p {
   font-size: 1.5em;
 }
@@ -477,14 +568,11 @@
 .footer__container .footerListContact__ul--li a img {
   width: 100%;
   max-width: 2.8rem;
-  border: 1px solid rgb(191, 191, 191);
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
 }
 .footer__container .footerListContact__ul--li a :hover {
-  border: 1px solid rgb(64, 64, 64);
   -webkit-filter: invert(100%);
   filter: invert(100%);
+  transition: 0.3s;
 }
 .footer__container .footerListPages {
   text-align: center;
@@ -501,6 +589,10 @@
   font-size: 1.5em;
   color: rgb(255, 206, 0);
 }
+.footer__container .footerListPages__li--a:hover {
+  color: rgb(147, 118, 0);
+  transition: 0.5s;
+}
 .footer__copyright {
   text-align: center;
   padding: 2rem 0;
@@ -509,7 +601,11 @@
   font-size: 1.5em;
 }
 .footer__copyright--p a {
+  font-size: 1.8rem;
   color: rgb(255, 206, 0);
+}
+.footer__copyright--p a:hover {
+  color: rgb(255, 244, 191);
 }
 
 @media (min-width: 1024px) {

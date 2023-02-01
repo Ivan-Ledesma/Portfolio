@@ -1,13 +1,15 @@
 @use 'variables';
 .aboutMeContent{
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 15px 0;
+    max-width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 6rem 0;
 
     &__texts{
+        width:80%;
+        padding: 0 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,17 +24,47 @@
         }
     }
     &__image{
-        margin: 0 auto;
-        padding: 15px 0;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
         &--img{
             width: 100%;
         }
     }
 }
 
+@media (min-width : 766px){
+    .aboutMeContent{
+        &__image{
+            &--img{
+                max-width: 600px;
+            }
+        }
+    }
+}
+
 @media (min-width : 1024px){
     .aboutMeContent{
-        max-width: 80%;
+        &__texts{
+            width: 60%;
+            &--h2{
+                font-size: variables.$font-size-bigger;
+            }
+            &--p{
+                padding: 1rem 0;
+            }
+        }
+        &__image{
+            &--img{
+                width: 100%;
+                max-width: 700px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1260px){
+    .aboutMeContent{
         &__texts{
             &--h2{
                 font-size: variables.$font-size-bigger;
@@ -42,6 +74,20 @@
             }
         }
         &__image{
+            &--img{
+                width: 100%;
+                max-width: 750px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1366px) {
+    .aboutMeContent{
+        &__texts{   
+            width: 50%;
+        }
+        &__image{
+            width: 50%;
             &--img{
                 width: 100%;
                 max-width: 750px;

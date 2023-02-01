@@ -25,6 +25,9 @@
                     color: rgb(255, 206, 0);
                     font-size: variables.$font-size-medium;
                 }
+                &--a:hover{
+                    color: rgb(147, 118, 0);
+                }
                 &--p{
                     font-size: variables.$font-size-small;
                 }
@@ -40,13 +43,10 @@
                         img{
                             width: 100%;
                             max-width: 2.8rem;
-                            border: 1px solid rgb(191, 191, 191);
-                            -webkit-filter: invert(100%);
-                            filter: invert(100%);
                         }:hover{
-                            border: 1px solid rgb(64, 64, 64);
                             -webkit-filter: invert(100%);
                             filter: invert(100%);
+                            transition: .3s;
                         }
                     }
                 }
@@ -63,6 +63,9 @@
                 }&--a{
                     font-size: variables.$font-size-small;
                     color: rgb(255, 206, 0);
+                }&--a:hover{
+                    color: rgb(147, 118, 0);
+                    transition: .5s;
                 }
             }
         }
@@ -73,7 +76,10 @@
         &--p{
             font-size: variables.$font-size-small;
             a{
+                font-size: 1.8rem;
                 color: rgb(255, 206, 0);
+            }a:hover{
+                color: rgb(255, 244, 191);
             }
         }
     }
