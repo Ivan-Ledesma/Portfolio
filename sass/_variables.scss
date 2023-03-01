@@ -1,15 +1,15 @@
-$font-size-smaller : 1.3em;
-$font-size-small : 1.5em;
-$font-size-medium : 1.7em;
-$font-size-big : 2em;
-$font-size-bigger : 2.5em;
+$font-size-smaller : 1.1em;
+$font-size-small : 1.3em;
+$font-size-medium : 1.5em;
+$font-size-big : 1.7em;
+$font-size-bigger : 2em;
 $font-size-desktop-big : 3em;
 
 .cv-button{
     transition: .5s;
     width: max-content;
     padding: 8px 15px;
-    list-style: none;
+    text-decoration: none;
     border-radius: 4px;
     background-color:rgb(255, 206, 0);
     color: black!important;

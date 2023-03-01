@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Ivan Do Santos Ledesma Portfolio</title>
@@ -90,39 +92,87 @@
         </section>
         <section class="main__section portfolio" id="portfolio">
             <h2 class="portfolio__title">Portfolio</h2>
-            <div class="portfolio__box html">
-                <div class="card">
-                    <img class="card__img" src="./imgs/LOR-Image.png" alt="">
-                    <div class="card__text">
-                        <h3 class="card__text--h3" >Página de LoR</h3>
-                        <h4 class="card__text--h4" >HTML / CSS</h4>
-                        <p class="card__text--p" >Web copia de la página oficial de "Legends of Runaterra" maquetada con HTML, CSS y usando tecnologías de Css como Sass y Boostrap 5.</p>
-                        <a class="card__text--a cv-button" href="https://ivan-ledesma.github.io/LOR-Page-Clon/" target="_blank">Visita la página</a>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="portfolio__box carousel-item active">
+                        <div class="card">
+                            <img class="card__img d-flex mx-auto" src="./imgs/LOR-Image.png" alt="">
+                            <div class="card__text">
+                                <h3 class="card__text--h3" >Página de LoR</h3>
+                                <h4 class="card__text--h4" >HTML / CSS</h4>
+                                <p class="card__text--p" >Web copia de la página oficial de "Legends of Runaterra" maquetada con HTML, CSS y usando tecnologías de Css como Sass y Boostrap 5.</p>
+                                <a class="card__text--a cv-button" href="https://ivan-ledesma.github.io/LOR-Page-Clon/" target="_blank">Visita la página</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__box carousel-item">
+                        <div class="card">
+                            <img class="card__img d-flex mx-auto" src="./imgs/proyecto-2.jpg" alt="">
+                            <div class="card__text">
+                                <h3 class="card__text--h3" >Creador de cartas</h3>
+                                <h4 class="card__text--h4" >JS</h4>
+                                <p class="card__text--p" >Página simulando un sistema creación de cartas creado principalmente con js vanilla utilizando clases, objetos y consumo de archivo Json.</p>
+                                <a class="card__text--a cv-button" target="_blank"  href="https://ivan-ledesma.github.io/Cards-Creator-JS/" target="_blank">Visita la página</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__box carousel-item">
+                        <div class="card">
+                            <img class="card__img d-flex mx-auto" src="./imgs/React-API.png" alt="">
+                            <div class="card__text">
+                                <h3 class="card__text--h3" >React Api Rest</h3>
+                                <h4 class="card__text--h4" >CSS</h4>
+                                <p class="card__text--p" >Ejercicio simple de REACT JS consumiendo una API y creando el entorno de trabajo con Vite JS</p>
+                                <a class="card__text--a cv-button" target="_blank" href="https://ivan-ledesma.github.io/API-Rick-and-Morty/">Visita la página</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio__box js">
-                <div class="card">
-                    <img class="card__img" src="./imgs/proyecto-2.jpg" alt="">
-                    <div class="card__text">
-                        <h3 class="card__text--h3" >Creador de cartas</h3>
-                        <h4 class="card__text--h4" >JS</h4>
-                        <p class="card__text--p" >Página simulando un sistema creación de cartas creado principalmente con js vanilla utilizando clases, objetos y consumo de archivo Json.</p>
-                        <a class="card__text--a cv-button" target="_blank"  href="https://ivan-ledesma.github.io/Cards-Creator-JS/" target="_blank">Visita la página</a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!--
+
+                <div class="portfolio__box html">
+                    <div class="card">
+                        <img class="card__img" src="./imgs/LOR-Image.png" alt="">
+                        <div class="card__text">
+                            <h3 class="card__text--h3" >Página de LoR</h3>
+                            <h4 class="card__text--h4" >HTML / CSS</h4>
+                            <p class="card__text--p" >Web copia de la página oficial de "Legends of Runaterra" maquetada con HTML, CSS y usando tecnologías de Css como Sass y Boostrap 5.</p>
+                            <a class="card__text--a cv-button" href="https://ivan-ledesma.github.io/LOR-Page-Clon/" target="_blank">Visita la página</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio__box react">
-                <div class="card">
-                    <img class="card__img" src="./imgs/React-API.png" alt="">
-                    <div class="card__text">
-                        <h3 class="card__text--h3" >React Api Rest</h3>
-                        <h4 class="card__text--h4" >CSS</h4>
-                        <p class="card__text--p" >Ejercicio simple de REACT JS consumiendo una API y creando el entorno de trabajo con Vite JS</p>
-                        <a class="card__text--a cv-button" target="_blank" href="https://ivan-ledesma.github.io/API-Rick-and-Morty/">Visita la página</a>
+                <div class="portfolio__box js">
+                    <div class="card">
+                        <img class="card__img" src="./imgs/proyecto-2.jpg" alt="">
+                        <div class="card__text">
+                            <h3 class="card__text--h3" >Creador de cartas</h3>
+                            <h4 class="card__text--h4" >JS</h4>
+                            <p class="card__text--p" >Página simulando un sistema creación de cartas creado principalmente con js vanilla utilizando clases, objetos y consumo de archivo Json.</p>
+                            <a class="card__text--a cv-button" target="_blank"  href="https://ivan-ledesma.github.io/Cards-Creator-JS/" target="_blank">Visita la página</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="portfolio__box react">
+                    <div class="card">
+                        <img class="card__img" src="./imgs/React-API.png" alt="">
+                        <div class="card__text">
+                            <h3 class="card__text--h3" >React Api Rest</h3>
+                            <h4 class="card__text--h4" >CSS</h4>
+                            <p class="card__text--p" >Ejercicio simple de REACT JS consumiendo una API y creando el entorno de trabajo con Vite JS</p>
+                            <a class="card__text--a cv-button" target="_blank" href="https://ivan-ledesma.github.io/API-Rick-and-Morty/">Visita la página</a>
+                        </div>
+                    </div>
+                </div>
+            -->
             <div class="portfolio__link">
                 <a href="https://github.com/Ivan-Ledesma" target="_blank" class="portfolio__link--a cv-button">Visita mi Git-Hub ! </a>
             </div>
@@ -167,9 +217,6 @@
                 </li>
                 <li class="footerListContact__li">
                     <p class="footerListContact__li--p">(+54 9)11 2393-3114</p>
-                </li>
-                <li class="footerListContact__li">
-                    <p class="footerListContact__li--p">ivan.dosantosledesma@outlook.com</p>
                 </li>
                 <ul class="footerListContact__ul">
                     <li class="footerListContact__ul--li">

@@ -6,14 +6,15 @@
     &__title{
         font-size: variables.$font-size-bigger;
         text-align: center;
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     &__box{
         .card{
-            width: 90%;
+            width: 100%;
             min-width: 320px;
-            margin: 25px auto;
+            min-height: 870px;
+            margin: 5px auto;
             background-color: #333;
             border: 1px solid #333;
             display: flex;   
@@ -21,17 +22,18 @@
             align-items: center;
 
             &__img{
-                width: 100%;
+                width: 90%;
+                max-width: 750px;
                 min-height: 400px;
                 max-height: 450px;
                 object-fit: cover;
             }
             &__text{
+                width: 90%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 10px;
-                padding: 10px 0;
+                gap: 5px;
                 box-sizing: border-box;
                 color: #Fff;
                 padding: 0 5px;
@@ -57,42 +59,6 @@
             }
         }
     }
-    .html{
-        margin: 0 auto;
-        width: 70%;
-        border-bottom: 2px solid rgb(255, 127, 22);
-        .card{
-            &__text{
-                &--h4{
-                    color: rgb(255, 127, 22);
-                }
-            }
-        }
-    }
-    .js{
-        margin: 0 auto;
-        width: 70%;
-        border-bottom: 2px solid rgb(255, 206, 0);
-        .card{
-            &__text{
-                &--h4{
-                    color: rgb(255, 206, 0);
-                }
-            }
-        }
-    }
-    .react{
-        margin: 0 auto;
-        width: 70%;
-        border-bottom: 2px solid rgb(32, 168, 221) ;
-        .card{
-            &__text{
-                &--h4{
-                    color: rgb(32, 168, 221);
-                }
-            }
-        }
-    }
     &__link{
         text-align: center;
         padding: 2em 0;
@@ -107,7 +73,7 @@
     .portfolio{
         &__box{
             .card{
-                padding: 4rem 0;
+                padding: 2rem 0;
                 &__img{
                     width: 100%;
                     min-height: 450px;
