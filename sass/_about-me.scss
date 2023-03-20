@@ -1,38 +1,43 @@
 @use 'variables';
-.aboutMeContent{
-    max-width: 100%;
+.about-me{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-    padding: 6rem 0;
-
-    &__texts{
-        width:90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: #fff;
-        gap: 14px;
-        &--h2{
-            font-size: variables.$font-size-big;
-        }&--p{
-            font-size: variables.$font-size-medium;
-        }&--a{
-            font-size: variables.$font-size-medium;
-        }
-    }
-    &__image{
+    .aboutMeContent{
         width: 90%;
+        margin: 0 auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        padding: 1rem 0;
-        &--img{
-            width: 100%;
+        &__texts{
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+            span{
+                font-weight: bold;
+                font-size: variables.$font-size-medium;
+            }
+            &--h2{
+                font-size: variables.$font-size-big;
+            }&--p{
+                font-size: variables.$font-size-medium;
+            }&--a{
+                font-size: variables.$font-size-medium;
+            }
+        }
+        &__image{
+            max-width: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0;
+            &--img{
+                object-fit: contain;
+                width: 100%;
+            }
         }
     }
 }
-
 @media (min-width : 766px){
     .aboutMeContent{
         &__image{
@@ -42,11 +47,10 @@
         }
     }
 }
-
 @media (min-width : 1024px){
     .aboutMeContent{
         &__texts{
-            width: 60%;
+            width: 80%;
             &--h2{
                 font-size: variables.$font-size-bigger;
             }
@@ -86,10 +90,9 @@
             width: 50%;
         }
         &__image{
-            width: 50%;
+            width: 70%;
             &--img{
                 width: 100%;
-                max-width: 750px;
             }
         }
     }

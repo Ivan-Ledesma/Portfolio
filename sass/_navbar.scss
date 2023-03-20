@@ -1,41 +1,47 @@
 @use 'variables';
 .nav {
     width: 100%;
+    padding: 10px 2px;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     background-color: #333;
-
-    .nav__section{width: 50%;}
+    border-bottom: 1px solid rgb(32, 32, 32);
+    .nav__section{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
     .sectionHome{
         padding: .4rem .8rem;
+        display: flex;
         &__a{
             display: flex;
             text-decoration: none;
             width: max-content;
             color: #fff;
             &--p{
-                font-size: variables.$font-size-big;
+                font-size: variables.$font-size-bigger;
             }
             .letter-mobile{
                 color: rgb(255, 206, 0);
+                margin: 0;
             }
-            .letter-desktop{display: none;}
+            .letter-desktop{display: none;margin: 0;}
         }:hover{color: rgb(32, 168, 221);}
     }
     .sectionLinks{
         display: none;
         justify-content: space-between;
         align-items: center;
+        margin: 0;
+        padding: 2px 0;
         &__li{
-            margin: 0 .3rem;
             list-style: none;
             &--a{
                 color: #fff;
-                font-size: variables.$font-size-smaller;
+                font-size: variables.$font-size-medium;
             }:hover{
                 color: gray;
             }
@@ -44,17 +50,16 @@
     .sectionMenu{
     display: flex;
     justify-content: flex-end;
+    padding-right: 5px;
     &__a{
         padding: 8px;
         background-color: rgb(255, 252, 55);
         width: max-content;
         display: block;
         &--img{
-            width: 100% ;
-            }
+            width: 100%;}
         }
     }
-
     .sectionMenuDrop{
         transition: .5s;
         height: 0;
@@ -120,6 +125,8 @@
 }
 @media screen and (min-width:1024px){
     .nav{
+        .sectionHome{width: 40%;}
+        .sectionLinks{width: 60%;}
         .sectionMenu{
             display: none!important;
         }

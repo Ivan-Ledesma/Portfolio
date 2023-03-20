@@ -20,58 +20,18 @@
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
+ul{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
 
 .main{
     width: 100%;
     background-color: rgb(32, 32, 32);
-}
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 600px) {
-
-    /* portfolio section*/
-    .card2 > img:first-child{
-        order: 3;
-    }
-
-    /* footer*/
-    .footer .footer__list--container{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-
-
-@media screen and (min-width:768px){
-    .portfolio__card{
-        width: 80%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .about-me{
-        flex-direction: row;
-    }
-    .about-me__text{
-        width: 50%;
-    }
-    .about-me__img{
-        width: 50%;
-        min-width: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .about-me__container{
-        flex-direction: row;
+    &__section{
+        min-height: 100vh;
     }
 }
 
