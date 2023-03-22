@@ -122,6 +122,7 @@
 .nav .sectionMenuDrop__iconLinks--li a :hover {
   -webkit-filter: invert(100%);
   filter: invert(100%);
+  transition: 0.3s;
 }
 .nav .height {
   height: 100vh;
@@ -462,6 +463,11 @@
 }
 .contact .ulList__li--a img {
   width: 3rem;
+}
+.contact .ulList__li--a :hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  transition: 0.3s;
 }
 .contact__container--cv-button {
   margin: 2rem auto 0 auto;
